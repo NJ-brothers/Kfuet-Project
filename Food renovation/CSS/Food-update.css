@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.headingdiv1 {
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 45%;
+    color: orangered;
+    margin-top: 20px;
+
+
+}
+
+
+.headingdiv2 {
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 40%;
+    color: rgb(0, 0, 118);
+    margin-top: 20px;
+
+}
+
+.foodupdate-maindiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    
+
+}
+
+.foodupdate-mainminidiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+
+.foodupdate-bodydiv1 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.39);
+    /* height: 500px;
+    width: 350px; */
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.image-div {
+    height: 300px;
+    width: 350px;
+
+}
+
+.image-div > img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.food-headingdiv {
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 5px;
+
+}
+
+.food-headingdiv > p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 118);
+    font-size: larger;
+    transition: 1s;
+
+}
+
+.text-div {
+    width: 88%;
+    margin-top: 20px;
+    margin-right: 25px;
+
+}
+
+.text-div > p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    color: grey;
+    transition: 1s;
+
+}
+
+.smalltext-div {
+    /* margin-right: 300px; */
+    margin-top: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: green;
+    cursor: pointer;
+    margin-left: 20px;
+    align-self: baseline;
+
+}
+
+.smalltext-div > p {
+    display: inline-block;
+
+}
+
+
+.image-div > img:hover {
+    /* padding: 4px 4px; */
+    transition: 1s;    
+    height: 305px;
+    width: 354px;
+
+}
+
+.veg-hover:hover {
+    color: green;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+
+.sweat-hover:hover {
+    color: rgb(48, 48, 255);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.meat-hover:hover {
+    color: brown;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.image {
+    height: 400px;
+    width: 400px;
+    position: relative;
+
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.parentdiv {
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    
+}
+
+.MAIN-OVERLAY {
+    margin-top: 50px;
+
+}
+
+.overlay-veg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 255, 0, 0.434);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        box-shadow: rgb(15, 180, 0) 0 0 40px;
+    }
+
+}
+
+.overlay-sweat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 103, 255, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        box-shadow: 0 0 40px rgba(48, 51, 255, 0.875);
+    }
+
+}
+
+.overlay-meat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        box-shadow: 0 0 40px rgba(255, 0, 0, 0.575);
+    }
+
+}
+
+.learn-more-button {
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    transition: background-color 1s ease;
+}
+
+.learn-more-button-veg:hover {
+    background-color: transparent;
+    color: green;
+    border: solid green;
+    transition: 1s;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+.learn-more-button-sweet:hover {
+    background-color: transparent;
+    color: blue;
+    border: solid blue;
+    transition: 1s;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+.learn-more-button-meat:hover {
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    border: solid rgb(255, 0, 0);
+    transition: 1s;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+
+
+.Randomization-parentdiv {
+    width: 100%;
+    display: flex;
+    
+}
+
+.Randomization-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.Randomization-image {}
+
+.Randomization-image > img {}
+
+.Randomization-overlay-veg {}

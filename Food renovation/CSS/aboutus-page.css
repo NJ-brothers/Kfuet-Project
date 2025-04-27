@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.maindiv-everything {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainheading-div {
+    display: flex;
+    color: orangered;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 50%;
+    font-size: xx-large;
+
+}
+
+.main-heading {
+    display: flex;
+    align-self: center;
+
+}
+
+.bodydiv2 {
+    display: flex;
+
+}
+
+.heading1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading1 > h1 {
+    color: orangered;
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 100px;
+    transition: 1s;
+
+}
+
+.heading1 > h2 {
+    font-size: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 1s;
+
+}
+
+.heading2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+    width: 80%;
+
+}
+
+.heading2 > p {
+    transition: 1s;
+
+}
+
+.hover-div:hover {
+    color: green;
+}
+
+.hover-div-foraboutus:hover {
+    color: green;
+}
+
+.button-maindiv {
+    display: flex;
+    padding: 10px;
+}
+
+.button-maindiv > button {
+    height: 50px;
+    padding: 0 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    font-size: larger;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.button-maindiv > button:hover {
+    background-color: white;
+    color: green;
+    border: green solid;
+    transition: 1s;
+    animation-timing-function: ease-in-out;
+    /* box-shadow: 0 0 20px green; */
+
+}
+
+.heading2:hover > p {
+    color: green;
+    transition: 1s;
+
+}
+
+.main-image > img {
+    transition: 1s;
+}
+
+.main-image:hover > img {
+    padding: 8px;
+    transition: 1s;
+
+}

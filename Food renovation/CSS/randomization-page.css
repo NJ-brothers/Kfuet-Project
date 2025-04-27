@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}  
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 20px;
+
+}
+
+.headingdiv-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.navbar-img-div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar-img-div > p {
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 5px;
+    color: green;
+
+}
+
+.navbar-img-div > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    align-self: center;
+    margin-left: 40px;
+    margin-right: 5px;
+
+}
+
+.headingdiv-parent > h1 {
+    color: green;
+    margin-left: 100px;
+    font-size: 3em;
+
+}
+
+.bodydiv-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.203); */
+    border-radius: 10px;
+
+}
+
+.bodydiv-parent > img {
+    height: 450px;
+    width: 800px;
+    margin: 10px;
+    padding: 5px;
+    transition: 1s;
+    border-radius: 20px;
+    &:hover {
+        transition: 1s;
+        margin: 10px;
+        padding: 5px;
+    }
+
+}
+
+.bodydiv-parent > p {
+    color: brown;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 1s;
+    &:hover{
+        border: solid brown;
+        transition: 1s;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+}
+
+.Display-random-img {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+#random-recipe-button {
+    margin-top: 50px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+        background-color: transparent;
+        color: green;
+        border: solid green 2px;
+        transition: 1s;
+        border-radius: 5px;
+    }
+}
+
+.shuffle-animation {
+    height: 500px;
+    width: 800px;
+    animation: shuffle 0.1s infinite;
+    filter: brightness(1.2) contrast(0.8);
+}
+
+@keyframes shuffle {
+    0% { transform: rotate(-2deg) scale(0.98); }
+    50% { transform: rotate(2deg) scale(1.02); }
+    100% { transform: rotate(-2deg) scale(0.98); }
+}
+
+#random-image {
+    height: 500px;
+    width: 800px;
+    color: black;
+
+}
+
+#recipe-name {
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 1s;
+}  /* Closing brace for #recipe-name */
+#recipe-name:hover {  /* Added hover state for #recipe-name */
+    border: solid green 2px;
+    transition: 1s;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
